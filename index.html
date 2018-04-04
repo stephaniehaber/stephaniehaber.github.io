@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stephanie Haber</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/YouTubePopUp.css">
+  <link rel="stylesheet" href="/css/video.popup.css">
+</head>
+<body>
+  <div class="map">
+    <div class="image" id="flamingo">
+  <a class="bla-1" href="https://www.youtube.com/watch?v=RsWX6GYSTxc">
+  <img src="./img/Randyland_Button.png" alt="Mountain View">
+  </a>
+</div>
+<div class="image" id="bridge">
+  <a class="bla-1" href="https://www.youtube.com/watch?v=RsWX6GYSTxc">
+    <img src="./img/Bridge_Button.png" alt="Mountain View">
+  </a>
+</div>
+<div class="image" id="church">
+  <img src="./img/Church_Button.png" alt="Mountain View">
+</div>
+<div class="image" id="credits">
+  <img src="./img/Credits_Button.png" alt="Mountain View">
+</div>
+<div class="image" id="ghost">
+  <img src="./img/Ghost_Signs_Button.png" alt="Mountain View">
+</div>
+<div class="image" id="kaufmann">
+  <img src="./img/Kaufmann_s_Clock.png" alt="Mountain View">
+</div>
+<div class="image" id="protractor">
+  <img src="./img/Protractor_Button.png" alt="Mountain View">
+</div>
+<div class="image" id="stairs">
+  <img src="./img/Stairs_Button.png" alt="Mountain View">
+</div>
+  </div>
+</body>
+</html>
+
+<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="YouTubePopUp.jquery.js"></script>
+<script type="text/javascript">
+    jQuery(function(){
+        jQuery("a.bla-1").YouTubePopUp();
+        jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
+    });
+</script>
