@@ -1,0 +1,5 @@
+plugins:
+  - jekyll-seo-tag
+  
+title: Pittsburgh's Oddities
+description: Interactive Documentary about the hidden and not-so-hidden gems of Pittsburgh.
