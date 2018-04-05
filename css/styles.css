@@ -32,7 +32,7 @@ img {
     height: 100%;
 }
 
-.button img {
+.button {
     -webkit-transition: all 1s ease; /* Safari and Chrome */
     -moz-transition: all 1s ease; /* Firefox */
     -ms-transition: all 1s ease; /* IE 9 */
@@ -40,7 +40,7 @@ img {
     transition: all 1s ease;
 }
 
-.button:hover img {
+.button:hover {
     -webkit-transform:scale(1.25); /* Safari and Chrome */
     -moz-transform:scale(1.25); /* Firefox */
     -ms-transform:scale(1.25); /* IE 9 */
