@@ -8,8 +8,29 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" type="text/css" href="/css/YouTubePopUp.css">
+  <link rel="stylesheet" href="http://www.jacklmoore.com/colorbox/example1/colorbox.css" />
 </head>
 <body>
+  <!-- from http://www.jacklmoore.com/colorbox/ -->
+
+  <script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+  <script>
+    function openColorBox(){
+      $.colorbox({html:"<p>Welcome to Pittsburgh\'s Oddities, an interactive documentary by Stephanie Haber. Click on oddities on the Pittsburgh map to pull up a mini documentary about that landmark. To return to the map, click the edges of the screen or the x button.</p>"});
+    }
+      
+    function countDown(){
+      seconds--
+      $("#seconds").text(seconds);
+      if (seconds === 0){
+        openColorBox();
+        clearInterval(i);
+      }
+    }
+
+    var seconds = 1,
+        i = setInterval(countDown, 1000);
+  </script>
   <div class="map">
     <div class="image" id="flamingo">
       <a class="bla-1" href="https://vimeo.com/263547918">
