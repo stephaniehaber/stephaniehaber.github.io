@@ -20,7 +20,7 @@
     function openColorBox(){
       $.colorbox({html:"<p>Welcome to Pittsburgh\'s Oddities, an interactive documentary by Stephanie Haber. Click on oddities on the Pittsburgh map to pull up a mini documentary about that landmark. To return to the map, click the edges of the screen or the x button.</p>"});
     }
-     })(jQuery);
+     
       
     function countDown(){
       seconds--
@@ -30,6 +30,7 @@
         clearInterval(i);
       }
     }
+    })(jQuery);
 
     var seconds = 1,
         i = setInterval(countDown, 1000);
