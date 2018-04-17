@@ -16,9 +16,11 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
   <script>
+    (function($) {
     function openColorBox(){
       $.colorbox({html:"<p>Welcome to Pittsburgh\'s Oddities, an interactive documentary by Stephanie Haber. Click on oddities on the Pittsburgh map to pull up a mini documentary about that landmark. To return to the map, click the edges of the screen or the x button.</p>"});
     }
+     })(jQuery);
       
     function countDown(){
       seconds--
